@@ -4,11 +4,11 @@ public abstract class Empleado {
 
     protected String nombre;
     protected String apellido;
-    protected String id;
+    protected int id;
     protected int antiguedad;
     protected final double PORCENTAJE_SEGURO_PENSION = 0.04;
 
-    public Empleado(String nombre, String apellido, String id, int antiguedad) {
+    public Empleado(String nombre, String apellido, int id, int antiguedad) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.id = id;
@@ -20,22 +20,34 @@ public abstract class Empleado {
     public String getApellido() {
         return apellido;
     }
-    public String getId() {
+    public int getId() {
         return id;
     }
     public int getAntiguedad() {
         return antiguedad;
     }
 
+    public void setNombre( String nombre){
+        this.nombre=nombre;
+    }
+
+    public void setApellido(String apellido){
+        this.apellido = apellido;
+    }
+
+    public void setAntiguedad (int antiguedad){
+        this.antiguedad = antiguedad;
+    }
+
     public abstract double calcularSalarioBruto();
-    public abstract double esEmpleadoPermanente();
+    public abstract boolean esEmpleadoPermanente();
 
     public double calcularDeducciones(){
         return calcularSalarioBruto() * PORCENTAJE_SEGURO_PENSION;
     }
 
     public double calcularBeneficios(){
-        return = 0;
+        return 0;
     }
 
     public double calcularSalarioNeto(){

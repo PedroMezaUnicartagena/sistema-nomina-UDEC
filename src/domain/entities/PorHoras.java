@@ -11,7 +11,7 @@ public class PorHoras extends Empleado{
 
 
     //constructor con parametros
-    public PorHoras(double tarifaHoras, int horasTrabajadas, String nombre, String apellido, String id, int antiguedad) {
+    public PorHoras(double tarifaHoras, int horasTrabajadas, String nombre, String apellido, int id, int antiguedad) {
         super(nombre, apellido, id, antiguedad);
 
         if (horasTrabajadas < 0){

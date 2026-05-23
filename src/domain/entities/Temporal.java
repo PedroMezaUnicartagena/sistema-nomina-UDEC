@@ -4,7 +4,7 @@ public class Temporal extends Empleado{
 
     private double salarioMensual;
 
-    public Temporal(double salarioMensual, String nombre, String apellido, String id, int antiguedad) {
+    public Temporal(double salarioMensual, String nombre, String apellido, int id, int antiguedad) {
         super(nombre, apellido, id, antiguedad);
         this.salarioMensual = salarioMensual;
     }
