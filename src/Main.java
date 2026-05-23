@@ -1,4 +1,9 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
+import view.cli.ConsolaNomina;
+
+
+public class Main {
+    public static void main(String[] args) {
+        ConsolaNomina consola = new ConsolaNomina();
+        consola.iniciar();
+    }
 }
