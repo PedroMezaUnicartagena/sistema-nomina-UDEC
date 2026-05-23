@@ -9,7 +9,7 @@ public class PorComision extends Empleado{
     private final double PORCENTAJE_BONO = 0.03;
     private final int BONO_ALIMENTACION = 1000000;
 
-    public PorComision(double sueldoBase, double totalVentas, double porcentajeDeComision, String nombre, String apellido, String id, int antiguedad) {
+    public PorComision(double sueldoBase, double totalVentas, double porcentajeDeComision, String nombre, String apellido, int id, int antiguedad) {
         super(nombre, apellido, id, antiguedad);
 
         if (totalVentas < 0) {

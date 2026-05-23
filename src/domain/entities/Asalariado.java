@@ -10,7 +10,7 @@ public class Asalariado extends Empleado{
 
     //constructor
 
-    public Asalariado(double salarioMensual, String nombre, String apellido, String id, int antiguedad) {
+    public Asalariado(String nombre, String apellido, int id, int antiguedad, double salarioMensual) {
         super(nombre, apellido, id, antiguedad);
         this.salarioMensual = salarioMensual;
 
